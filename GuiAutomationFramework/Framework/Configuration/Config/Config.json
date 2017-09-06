@@ -1,0 +1,120 @@
+﻿///as per requirements do the changes
+
+{
+  "Timeouts": {
+	"explicitly": 20,
+	"implicitly": 25,
+	"pageLoad": 30,
+	"script": 30
+  },
+  "RemoteServers": [
+   {
+	  "url": "Hub Url",
+	  "useGrid": true      //true OR false depending on using grid
+	},
+	{
+	  "role": "For Teacher",
+	  "url": "http://IP:port/wd/hub",
+	  "proxyChrome": "http://IP:port",	
+	  "proxyIE": "http://IP:port",
+	  "useGrid": true
+	},
+	{
+	  "role": "For Admin",
+	  "url": "http://IP:port/wd/hub",
+	  "proxyChrome": "http://IP:port",
+	  "proxyIE": "http://IP:port",
+	  "useGrid": true
+	}
+  ],
+  "Drivers": [
+	{
+	  "Name": "IExplorer",
+	  "Proxy": {
+		"Value": "",
+		"Type": "",
+		"Exceptions": ""
+	  },
+	  "Capabilities": [
+		{
+		  "Name": "browserName",
+		  "Value": "internet explorer"
+		},
+		{
+		  "Name": "platform",
+		  "Value": "WINDOWS"
+		},
+		{
+		  "Name": "version",
+		  "Value": ""
+		},
+		{
+		  "Name": "ignoreZoomSetting",
+		  "Value": "false"
+		},
+		{
+		  "Name": "nativeEvents",
+		  "Value": "false"
+		},
+		{
+		  "Name": "requireWindowFocus",
+		  "Value": "false"
+		},
+		{
+		  "Name": "initialBrowserUrl",
+		  "Value": "about:blank"
+		},
+		{
+		  "Name": "enablePersistentHover",
+		  "Value": "false"
+		},
+		{
+		  "Name": "ie.forceCreateProcessApi",
+		  "Value": "false"
+		},
+		{
+		  "Name": "ie.forceShellWindowsApi",
+		  "Value": "false"
+		},
+		{
+		  "Name": "ie.browserCommandLineSwitches",
+		  "Value": ""
+		},
+		{
+		  "Name": "ie.usePerProcessProxy",
+		  "Value": "false"
+		},
+		{
+		  "Name": "ie.ensureCleanSession",
+		  "Value": "true"
+		}
+	  ]
+	},
+	{
+	  "Name": "Chrome",
+	  "Proxy": {
+		"Value": "",
+		"Type": "",
+		"Exceptions": ""
+	  },
+	  "Arguments": [ ],
+	  "Capabilities": [
+		{
+		  "Name": "security.cookie_behavior",
+		  "Value": "0"
+		}
+	  ]
+	},
+	{
+	  "Name": "Firefox",
+	  "Proxy": {
+		"Value": "",
+		"Type": "",
+		"Exceptions": ""
+	  },
+	  "Arguments": [ ],
+	  "Capabilities": [
+	  ]
+	}
+  ]
+}
